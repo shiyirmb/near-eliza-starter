@@ -6,7 +6,7 @@ The starter for building [Eliza](https://elizaos.github.io/eliza/) agents with [
 
 ### 1. Install NEAR AI CLI
 
-NEAR AI provides free agent hosting and inference APIs. You can skip this step if you want to use other model providers except NEAR AI.
+NEAR AI provides free agent hosting and inference APIs. You can skip this step if you want to use other model providers.
 
 Install NEAR AI CLI following the instructions in https://docs.near.ai/cli. 
 
