@@ -1,6 +1,6 @@
 # near-eliza-starter
 
-The starter for building [Eliza](https://elizaos.github.io/eliza/) agents with [NEAR Protocol](https://near.org/) and [NEAR AI](https://docs.near.ai/), built with below technology stack:
+The starter for building [Eliza](https://elizaos.github.io/eliza/) agents with [NEAR Protocol](https://near.org/) and [NEAR AI](https://docs.near.ai/), created with below awesome technology stack 🔥:
 
 - LLM Model Provider: [NEAR AI](https://docs.near.ai)
 - Agent Framework: [Eliza](https://elizaos.github.io/eliza/)
