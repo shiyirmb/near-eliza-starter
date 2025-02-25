@@ -10,7 +10,7 @@
     "clean": "./scripts/clean.sh",
     "start:service:all": "pm2 start pnpm --name=\"all\" --restart-delay=3000 --max-restarts=10 -- run start:all",
     "stop:service:all": "pm2 stop all",
-    "postinstall": "bash scripts/multichain-tools/update-rpc.sh"
+    "postinstall": "pnpm rebuild better-sqlite3 && bash scripts/multichain-tools/update-rpc.sh"
   },
   "dependencies": {
     "@elizaos/adapter-postgres": "0.1.9",
