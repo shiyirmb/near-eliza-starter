@@ -52,8 +52,8 @@ Add your NEAR account and private key to `.env`
 ```env
 NEAR_NETWORK=testnet
 NEAR_RPC_URL=https://neart.lava.build
-NEAR_ADDRESS=<your testnet NEAR account>
-NEAR_WALLET_SECRET_KEY=<private key>
+NEAR_ADDRESS=xxxx.testnet
+NEAR_WALLET_SECRET_KEY=ed25519:xxxxxxxx
 ```
 
 Specify the models to use, e.g. DeepSeek-R1
