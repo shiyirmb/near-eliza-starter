@@ -6,7 +6,7 @@ The starter for building [Eliza](https://elizaos.github.io/eliza/) agents with [
 - Agent Framework: [Eliza](https://elizaos.github.io/eliza/)
 - Plugins
   - [plugin-near](https://github.com/elizaos-plugins/plugin-near) (NEAR)
-  - [plugin-multichain](https:/github.com/near-agent/plugin-multichain) (BTC / ETH, via [Chain Signatures](https://docs.near.org/chain-abstraction/chain-signatures))
+  - [plugin-multichain](https://github.com/near-agent/plugin-multichain) (BTC / ETH, via [Chain Signatures](https://docs.near.org/chain-abstraction/chain-signatures))
 - Memory
   - adapter-sqlite
 - Actions / Tools
