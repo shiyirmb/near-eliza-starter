@@ -2,6 +2,22 @@
 
 The starter for building [Eliza](https://elizaos.github.io/eliza/) agents with [NEAR Protocol](https://near.org/) and [NEAR AI](https://docs.near.ai/).
 
+The starter comes with below technology stack and features:
+
+- LLM Model Provider: [NEAR AI](https://docs.near.ai)
+- Agent Framework: [Eliza](https://elizaos.github.io/eliza/)
+- Plugins
+  - [plugin-near](https://github.com/elizaos-plugins/plugin-near) (NEAR)
+  - [plugin-multichain](https:/github.com/near-agent/plugin-multichain) (BTC / ETH, via [Chain Signatures](https://docs.near.org/chain-abstraction/chain-signatures))
+- Memory
+  - adapter-sqlite
+- Actions
+  - Transfer NEAR, BTC, ETH natively
+  - Swap on Ref Finance
+- Clients
+  - REST API
+  - Web Client
+
 ## Prepare Environment
 
 ### 1. Install NEAR AI CLI
