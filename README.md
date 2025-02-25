@@ -1,5 +1,8 @@
 # near-eliza-starter
 
+<img src="https://github.com/user-attachments/assets/b0ed9973-aa87-4602-93c3-e9d723279045" alt="Description" width="100">
+<img src="https://github.com/user-attachments/assets/d47b5bdd-3e9b-4e2c-ac7a-7edc66978baf" alt="Description" width="100">
+
 The starter for building [Eliza](https://elizaos.github.io/eliza/) agents with [NEAR Protocol](https://near.org/) and [NEAR AI](https://docs.near.ai/), created with below awesome technology stack 🔥:
 
 - LLM Model Provider: [NEAR AI](https://docs.near.ai)
