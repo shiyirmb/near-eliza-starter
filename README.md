@@ -26,7 +26,13 @@ Multichain Features:
 
 ## Prepare Environment
 
-### 1. Install NEAR AI CLI
+### 1. Create Testnet NEAR Account
+
+Create testnet account via https://testnet.mynearwallet.com (You'll receive 10 NEAR on testnet once created).
+
+Claim more testnet NEAR from https://near-faucet.io if needed.
+
+### 2. Install NEAR AI CLI
 
 NEAR AI provides free agent hosting and inference APIs. You can skip this step if you want to use other model providers.
 
@@ -39,7 +45,7 @@ python3 -m pip install nearai
 nearai login
 ```
 
-### 2. Configure environment variables
+### 3. Configure environment variables
 
 Duplicate environment template
 
@@ -56,7 +62,7 @@ NEAR_ADDRESS=xxxx.testnet
 NEAR_WALLET_SECRET_KEY=ed25519:xxxxxxxx
 ```
 
-Specify the models to use, e.g. DeepSeek-R1
+Specify the models to use, e.g. DeepSeek-V3
 
 ```env
 SMALL_NEARAI_MODEL=  # Default: fireworks::accounts/fireworks/models/llama-v3p2-3b-instruct
