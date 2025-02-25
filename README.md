@@ -1,8 +1,6 @@
 # near-eliza-starter
 
-The starter for building [Eliza](https://elizaos.github.io/eliza/) agents with [NEAR Protocol](https://near.org/) and [NEAR AI](https://docs.near.ai/).
-
-The starter comes with below technology stack and features:
+The starter for building [Eliza](https://elizaos.github.io/eliza/) agents with [NEAR Protocol](https://near.org/) and [NEAR AI](https://docs.near.ai/), built with below technology stack:
 
 - LLM Model Provider: [NEAR AI](https://docs.near.ai)
 - Agent Framework: [Eliza](https://elizaos.github.io/eliza/)
@@ -11,12 +9,20 @@ The starter comes with below technology stack and features:
   - [plugin-multichain](https:/github.com/near-agent/plugin-multichain) (BTC / ETH, via [Chain Signatures](https://docs.near.org/chain-abstraction/chain-signatures))
 - Memory
   - adapter-sqlite
-- Actions
+- Actions / Tools
   - Transfer NEAR, BTC, ETH natively
   - Swap on Ref Finance
 - Clients
   - REST API
   - Web Client
+
+Multichain Features:
+
+- Send native BTC with your NEAR account via [Chain Signatures](https://docs.near.org/chain-abstraction/chain-signatures)
+
+![dbef7cf3-f79f-430c-9497-f92b61c9d151](https://github.com/user-attachments/assets/6b2c5319-b18f-4eb9-af7a-a3bccb9f6733)
+
+
 
 ## Prepare Environment
 
