@@ -11,7 +11,9 @@ NEAR AI provides free agent hosting and inference APIs. You can skip this step i
 Install NEAR AI CLI following the instructions in https://docs.near.ai/cli. 
 
 ```bash
+# python 3.11 recommended
 python3 -m pip install nearai
+# Bitte Wallet is recommended for NEAR account creation
 nearai login
 ```
 
@@ -37,7 +39,7 @@ Specify the models to use, e.g. DeepSeek-R1
 ```env
 SMALL_NEARAI_MODEL=  # Default: fireworks::accounts/fireworks/models/llama-v3p2-3b-instruct
 MEDIUM_NEARAI_MODEL= # Default: fireworks::accounts/fireworks/models/llama-v3p1-70b-instruct
-LARGE_NEARAI_MODEL=fireworks::accounts/fireworks/models/deepseek-r1  # Default: fireworks::accounts/fireworks/models/llama-v3p1-405b-instruct
+LARGE_NEARAI_MODEL=fireworks::accounts/fireworks/models/deepseek-v3  # Default: fireworks::accounts/fireworks/models/llama-v3p1-405b-instruct
 IMAGE_NEARAI_MODEL=  # Default: fireworks::accounts/fireworks/models/playground-v2-5-1024px-aesthetic
 ```
 
