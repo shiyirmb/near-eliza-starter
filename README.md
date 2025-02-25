@@ -26,24 +26,26 @@ Multichain Features:
 
 ## Prepare Environment
 
-### 1. Create Testnet NEAR Account
-
-Create testnet account via https://testnet.mynearwallet.com (You'll receive 10 NEAR on testnet once created).
-
-Claim more testnet NEAR from https://near-faucet.io if needed.
-
-### 2. Install NEAR AI CLI
+### 1. Install NEAR AI CLI
 
 NEAR AI provides free agent hosting and inference APIs. You can skip this step if you want to use other model providers.
 
 Install NEAR AI CLI following the instructions in https://docs.near.ai/cli. 
 
+To login NEAR AI, you'll need a mainnet NEAR account, it's recommended to create the account with the Bitte Wallet option in NEAR AI user interface.
+
 ```bash
 # python 3.11 recommended
 python3 -m pip install nearai
-# Bitte Wallet is recommended for NEAR account creation
+# Bitte Wallet is recommended for creating one mainnet NEAR account for login
 nearai login
 ```
+
+### 2. Create Testnet NEAR Account
+
+Create testnet account via https://testnet.mynearwallet.com (You'll receive 10 NEAR on testnet once created).
+
+Claim more testnet NEAR from https://near-faucet.io if needed.
 
 ### 3. Configure environment variables
 
@@ -53,7 +55,7 @@ Duplicate environment template
 cp .env.example .env
 ```
 
-Add your NEAR account and private key to `.env`
+Add your NEAR account created in step (2) and its private key to `.env`
 
 ```env
 NEAR_NETWORK=testnet
