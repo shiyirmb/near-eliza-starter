@@ -35,7 +35,7 @@ NEAR AI provides free agent hosting and inference APIs. You can skip this step i
 
 Install NEAR AI CLI following the instructions in https://docs.near.ai/cli. 
 
-To login NEAR AI, you'll need a mainnet NEAR account, it's recommended to create the account with the Bitte Wallet option in NEAR AI user interface.
+To login NEAR AI, you'll need a **mainnet** NEAR account, it's recommended to create the account with the Bitte Wallet option in NEAR AI user interface.
 
 ```bash
 # python 3.11 recommended
@@ -46,7 +46,7 @@ nearai login
 
 ### 2. Create Testnet NEAR Account
 
-Create testnet account via https://testnet.mynearwallet.com (You'll receive 10 NEAR on testnet once created).
+Create **testnet** NEAR account via https://testnet.mynearwallet.com (You'll receive 10 NEAR on testnet once created). Please notice this testnet account is different from the mainnet NEAR account you have created in step (1).
 
 Claim more testnet NEAR from https://near-faucet.io if needed.
 
