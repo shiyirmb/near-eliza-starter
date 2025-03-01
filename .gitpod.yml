@@ -1,0 +1,38 @@
+image:
+  file: .gitpod.Dockerfile
+# List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
+ports:
+  - name: Agent Server
+    description: The agent API server
+    port: 3000
+    onOpen: ignore
+    visibility: public
+  - name: Web Client
+    description: The web client to chat with the agent
+    port: 5173
+    onOpen: open-browser
+    visibility: public
+tasks:
+  - name: NEAR AI CLI
+    init: python -m pip install nearai
+    command: |
+      [ -f ~/.nearai/config.json ] || (printf "\n\n*** NEAR AI login ***\n\n" && nearai login --remote)
+  - name: Create NEAR Testnet Account
+    init: |
+      NEAR_CREDENTIALS_TESTNET_DIR=~/.near-credentials/testnet
+      [ -d "'$NEAR_CREDENTIALS_TESTNET_DIR'" ] || exit
+      npm i -g near-cli-rs
+      cp .env.example .env
+      near account create-account sponsor-by-faucet-service eliza-$(date +%s%3N).testnet autogenerate-new-keypair save-to-legacy-keychain network-config testnet create
+      NEAR_ACCOUNT_JSON_FILE=$(ls $NEAR_CREDENTIALS_TESTNET_DIR/*.json | head -n 1)
+      NEAR_ACCOUNT_KEYS=$(cat $NEAR_ACCOUNT_JSON_FILE)
+      NEAR_ADDRESS=$(basename $NEAR_ACCOUNT_JSON_FILE .json)
+      NEAR_WALLET_SECRET_KEY=$(echo $NEAR_ACCOUNT_KEYS | jq -r ".private_key")
+      sed -i 's/NEAR_ADDRESS=.*$/NEAR_ADDRESS='${NEAR_ADDRESS}'/g' .env
+      sed -i 's/NEAR_WALLET_SECRET_KEY=.*$/NEAR_WALLET_SECRET_KEY='${NEAR_WALLET_SECRET_KEY}'/g' .env
+  - name: Agent Server
+    init: pnpm i
+  - name: Web Client
+    before: export VITE_SERVER_URL=$(gp url 3000)
+    init: cd client && pnpm i && cd ..
+    command: pnpm start:client
